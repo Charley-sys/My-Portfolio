@@ -10,7 +10,7 @@ This portfolio showcases my journey, skills, and selected projects at the inters
 ---
 
 ## 🌍 Live Demo
-👉 [View My Portfolio Online](https://charley-sys.github.io)
+👉 [View My Portfolio Online](https://charley-sys.github.io),(https://charley-sys.netlify.app/)
 
 ---
 
