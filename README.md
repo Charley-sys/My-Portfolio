@@ -1,9 +1,5 @@
 # Portfolio-Website
 
-Got it ✅ Charles!
-Here’s a **professional README.md** draft for your **portfolio website repo** (GitHub-friendly with sections, badges, and instructions):
-
----
 
 # 🌐 Charles Otieno – Portfolio Website
 
