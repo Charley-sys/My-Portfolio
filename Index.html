@@ -5,45 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Charles Otieno - Biomedical Engineer & Software Developer Portfolio" />
   <title>Charles Otieno | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6d1b1b, #a94442);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin: 0.8rem 0;
+      font-size: 1.2rem;
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      margin: 0 12px;
+      font-size: 1.6rem;
+      color: #fff;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+
+    nav {
+      background: #b94a48;
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      border-bottom: 3px solid #a94442;
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: 5px;
+      color: #6d1b1b;
+    }
+
+    /* Project Cards */
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .expandable h3 {
+      cursor: pointer;
+      color: #a94442;
+      user-select: none;
+      margin: 0;
+    }
+
+    .details {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .details.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Tech Stack Badges */
+    .tech-stack span {
+      background: #b94a48;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 15px;
+      margin: 3px;
+      display: inline-block;
+      font-size: 0.85rem;
+    }
+
+    /* Images */
+    .details img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    /* Contact Form */
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    button {
+      background: #a94442;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #6d1b1b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #6d1b1b;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Charles Otieno</h1>
     <p>Biomedical Engineer & Software Developer</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/charlesotieno123/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Charley-sys" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/254743971067" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:charlesotienoomondi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
   </header>
 
   <nav>
-    <div class="logo">
-      <img src="https://images.pexels.com/photos/6790763/pexels-photo-6790763.jpeg" alt="Biomedical technician sits at a workshop desk using a laptop, surrounded by electronic equipment and tools in a well-lit workspace." height="300" width="250" style="display: block; float: left; margin-right: 16px;" />
-    </div>
-  <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-github"></i>
-    <span>GitHub</span>
-  </a> 
-
-  <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-linkedin"></i>
-    <span>LinkedIn</span>
-  </a>
-  <a href="mailto:charlesotienoomondi@gmail.com">
-    <i class="fa-solid fa-envelope"></i>
-    <span>Email</span> 
-  </a> 
-  <a href="tel:+254743971067"> 
-    <i class="fa-solid fa-phone"></i>
-    <span>Phone</span>
-  </a>
-  </nav> 
     <ul>
       <li><a href="#about">About Me</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#interests">Interests</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -51,56 +223,73 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Charles Otieno, a passionate Biomedical Engineer and Software Developer. I integrate medical technology and software to solve real-world healthcare challenges in Kenya and beyond.</p>
+    <p>I’m Charles Otieno, a passionate Biomedical Engineer and Software Developer. I integrate medical technology, AI, and software to solve real-world healthcare challenges in Kenya and beyond.</p>
   </section>
 
   <section id="education">
     <h2>Educational Background</h2>
-    <p>I hold a Diploma in Biomedical Engineering from Technical University Of Mombasa and also a Certificate in python programming.With over 4 years of hands-on experience in medical equipment maintenance and healthtech innovation.</p>
-    <a href="cv/CHARLES%20OTIENO%20RESUME%20UPDATED%5E1.pdf" download>Download My CV</a>
-  </section>
-
-  <section id="languages">
-    <h2>Programming Languages</h2>
-    <ul>
-      <li>Python</li>
-       <i class="fa-brands fa-python"></i>
-      <li>HTML5</li>
-       <i class="fa-brands fa-html5"></i>
-      <li>CSS3</li>
-       <i class="fa-brands fa-css3"></i>
-    </ul>
-  </section>
-
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>Healthcare Technology and AI</li>
-      <li>Medical Devices and IoT Integration</li>
-      <li>Web Development & System Design</li>
-      <li>Open Source Collaboration</li>
-    </ul>
+    <p>I hold a Diploma in Biomedical Engineering from Technical University Of Mombasa and a Certificate in Python Programming. With 4+ years of experience in medical equipment maintenance and healthtech innovation.</p>
+    <a href="Resume/CHARLES OTIENO RESUME UPDATED..pdf" download>📄 Download My CV</a>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Medical Equipment Diagnosis Chatbot</strong> - An AI-based tool that helps diagnose issues in medical devices based on symptoms.
-      </li>
-      <li>
-        <strong>BMI Calculator Web App</strong> - A responsive app for health institutions to easily calculate and categorize BMI.
-      </li>
-      <li>
-        <strong>Remote IoT Based Temperature and Humidity monitoring and Alert system for CT scan and X-ray room</strong> - A real time innovative monitoring and alert system for enhancing precision in Imaging equipments workability in the healthcare institutions to improve patient care.
-      </li>
-    </ul>
-<section>
-    <h3>Now</h3>
-   <p>Exploring how IoT and AI can improve diagnostic tools in rural clinics.</p>
-</section>
+    <div class="projects">
 
-    <p>Find more on my <a href="https://github.com/Charley-sys" target="_blank">GitHub</a>.</p>
+      <!-- Mama Health App -->
+      <div class="project-card expandable">
+        <h3 onclick="toggleDetails(this)">Mama Health App ⬇️</h3>
+        <p>A mobile & web platform designed to reduce maternal mortality.</p>
+        <div class="details">
+          <p><strong>Tech Stack:</strong></p>
+          <div class="tech-stack">
+            <span>Flutter</span><span>Laravel</span><span>MySQL</span><span>AI</span>
+          </div>
+          <p><strong>Features:</strong> Pregnancy monitoring, SMS alerts, clinic scheduler, payments.</p>
+          <img src="Screenshots/Screenshot (415).png" alt="Mama Health Demo Screenshot">
+          <p><a href="https://github.com/Charley-sys/mama-health" target="_blank">View Repo</a> | 
+             <a href="https://mama-health.donscustomclothiers.co.ke/" target="_blank">Live Demo</a></p>
+        </div>
+      </div>
+
+      <!-- Other Projects -->
+      <div class="project-card expandable">
+        <h3 onclick="toggleDetails(this)">Medical Equipment Diagnosis Chatbot ⬇️</h3>
+        <p>An AI tool that diagnoses medical device issues based on symptoms.</p>
+        <div class="details">
+          <p><strong>Tech Stack:</strong></p>
+          <div class="tech-stack">
+            <span>Python</span><span>Flask</span><span>TensorFlow</span>
+          </div>
+          <img src="screenshots/chatbot-demo.png" alt="Chatbot Screenshot">
+          <p><a href="https://github.com/Charley-sys/med-chatbot" target="_blank">View Repo</a></p>
+        </div>
+      </div>
+
+      <div class="project-card expandable">
+        <h3 onclick="toggleDetails(this)">BMI Calculator Web App ⬇️</h3>
+        <p>A responsive app for calculating and categorizing BMI for health institutions.</p>
+        <div class="details">
+          <div class="tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <img src="screenshots/bmi-demo.png" alt="BMI Demo Screenshot">
+          <p><a href="https://github.com/Charley-sys/bmi-calculator" target="_blank">View Repo</a></p>
+        </div>
+      </div>
+
+      <div class="project-card expandable">
+        <h3 onclick="toggleDetails(this)">IoT Monitoring System ⬇️</h3>
+        <p>IoT solution for temperature & humidity monitoring in CT and X-ray rooms.</p>
+        <div class="details">
+          <div class="tech-stack">
+            <span>Arduino</span><span>Python</span><span>MQTT</span>
+          </div>
+          <img src="screenshots/iot-demo.png" alt="IoT Monitoring Demo Screenshot">
+          <p><a href="https://github.com/Charley-sys/iot-monitoring" target="_blank">View Repo</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -123,5 +312,14 @@
     <p>© 2025 Charles Otieno | Nairobi, Kenya</p>
   </footer>
 
+  <script>
+    function toggleDetails(element) {
+      const details = element.nextElementSibling;
+      details.classList.toggle('show');
+      element.textContent = details.classList.contains('show')
+        ? element.textContent.replace("⬇️", "⬆️")
+        : element.textContent.replace("⬆️", "⬇️");
+    }
+  </script>
 </body>
 </html>
