@@ -19,9 +19,8 @@ It highlights my **skills, education, and projects** in healthcare technology, A
 
 🔗 **Live Website:** [View Portfolio](https://your-live-link-here.com)
 
-![Portfolio Screenshot](screenshots/portfolio-home.png)
 
----
+
 
 ## 📂 Sections
 
