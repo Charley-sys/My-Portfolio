@@ -17,7 +17,7 @@ It highlights my **skills, education, and projects** in healthcare technology, A
 
 ## 📸 Demo
 
-🔗 **Live Website:** [View Portfolio](https://app.netlify.com/projects/charley-sys/overview)
+🔗 **Live Website:** [View Portfolio](https://charley-sys.netlify.app/)
 
 
 
